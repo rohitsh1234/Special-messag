@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background: #f7f0f5; /* Light pink background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+header h1 {
+    color: #e75480; /* Pastel pink color */
+    font-size: 2.5rem;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Message Card */
+.message-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.message-card:hover {
+    transform: scale(1.05);
+}
+
+.reveal-button {
+    background-color: #e75480;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.reveal-button:hover {
+    background-color: #d94370;
+    transform: scale(1.05);
+}
+
+/* Hidden Message */
+.hidden-message {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    margin-top: 20px;
+}
+
+.hidden-message.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
